@@ -1,6 +1,6 @@
 default: install
 
-install: init striptags stripblanklines git-history-rewrite
+install: init striptags stripblanklines git-history-rewrite stringdiff
 	@echo "\nAll scripts successfully installed!"
 	@echo "Please add $(shell pwd)/bin to your PATH variable"
 
@@ -24,3 +24,8 @@ git-history-rewrite:
 	@echo "Installing git-history-rewrite ..."	
 	@cd bin && ln -s ../bash/git-history-rewrite.sh git-history-rewrite
 	@echo "git-history-rewrite installed"	
+
+stringdiff:
+	@echo "Installing stringdiff ..."	
+	@cd bin && ln -s ../bash/stringdiff.sh stringdiff
+	@echo "stringdiff installed"	
