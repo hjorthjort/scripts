@@ -8,6 +8,11 @@ init:
 	@rm -rf bin
 	@mkdir bin
 
+brewup:
+	@echo "Installing brewup ..."
+	@cd bin && ln -s ../bash/brewup.sh brewup
+	@echo "brewup installed"	
+
 striptags:
 	@echo "Installing striptags ..."
 	@gcc -o striptags C/striptags.c
