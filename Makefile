@@ -1,6 +1,6 @@
 default: install
 
-install: init striptags stripblanklines git-history-rewrite stringdiff
+install: init brewup striptags stripblanklines git-history-rewrite stringdiff trunc
 	@echo "\nAll scripts successfully installed!"
 	@echo "Please add $(shell pwd)/bin to your PATH variable"
 
@@ -34,3 +34,9 @@ stringdiff:
 	@echo "Installing stringdiff ..."	
 	@cd bin && ln -s ../bash/stringdiff.sh stringdiff
 	@echo "stringdiff installed"	
+
+trunc:
+	@echo "Installing trunc ..."
+	@cd bin && ln -s ../bash/trunc.sh trunc
+	@echo "trunc installed"	
+
