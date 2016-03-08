@@ -13,6 +13,12 @@ brewup:
 	@cd bin && ln -s ../shell/brewup.sh brewup
 	@echo "brewup installed"	
 
+pizza:
+	@echo "Installing pizza"
+	@cd bin && ln -s ../Python/pizza/pizza.sh pizza
+	@echo "Pizza installed"
+
+
 striptags:
 	@echo "Installing striptags ..."
 	@gcc -o striptags C/striptags.c
