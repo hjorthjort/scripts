@@ -1,10 +1,15 @@
+#!/usr/bin/env python
+
 import codecs
 import random
+import os
+dirname = os.path.dirname(os.path.realpath(__file__))
 
 MIN_INGRED = 2
 MAX_INGRED = 8
 
-with open("vegetarian") as ingredients:
+filename = dirname + "/vegetarian"
+with open(filename) as ingredients:
         content = ingredients.read().splitlines()
 
 roulette_result = []

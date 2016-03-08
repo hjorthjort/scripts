@@ -15,7 +15,7 @@ brewup:
 
 pizza:
 	@echo "Installing pizza"
-	@cd bin && ln -s ../Python/pizza/pizza.sh pizza
+	@cd bin && ln -s ../Python/pizza/pizza_roulette.py pizza
 	@echo "Pizza installed"
 
 
