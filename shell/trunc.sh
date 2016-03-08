@@ -7,6 +7,11 @@ function delete {
 function keep {
     echo "File untouched"
 }
+
+if [ -z "$1" ]; then
+    echo "No file specified"
+    exit
+fi
 read -n1 -p "Truncate file? [yN]" delete
 printf "\n"
 case $delete in
