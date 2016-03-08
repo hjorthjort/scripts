@@ -10,7 +10,7 @@ init:
 
 brewup:
 	@echo "Installing brewup ..."
-	@cd bin && ln -s ../bash/brewup.sh brewup
+	@cd bin && ln -s ../shell/brewup.sh brewup
 	@echo "brewup installed"	
 
 striptags:
@@ -27,16 +27,16 @@ stripblanklines:
 
 git-history-rewrite: 
 	@echo "Installing git-history-rewrite ..."	
-	@cd bin && ln -s ../bash/git-history-rewrite.sh git-history-rewrite
+	@cd bin && ln -s ../shell/git-history-rewrite.sh git-history-rewrite
 	@echo "git-history-rewrite installed"	
 
 stringdiff:
 	@echo "Installing stringdiff ..."	
-	@cd bin && ln -s ../bash/stringdiff.sh stringdiff
+	@cd bin && ln -s ../shell/stringdiff.sh stringdiff
 	@echo "stringdiff installed"	
 
 trunc:
 	@echo "Installing trunc ..."
-	@cd bin && ln -s ../bash/trunc.sh trunc
+	@cd bin && ln -s ../shell/trunc.sh trunc
 	@echo "trunc installed"	
 
