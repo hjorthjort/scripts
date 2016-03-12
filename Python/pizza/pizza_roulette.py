@@ -3,6 +3,7 @@
 import codecs
 import random
 import os
+import sys
 dirname = os.path.dirname(os.path.realpath(__file__))
 
 MIN_INGRED = 2
@@ -11,6 +12,11 @@ MAX_INGRED = 8
 filename = dirname + "/vegetarian"
 with open(filename) as ingredients:
         content = ingredients.read().splitlines()
+
+if "meat" in sys.argv :
+    filename = dirname + "/meat"
+    with open(filename) as ingredients:
+        content = content + ingredients.read().splitlines()
 
 roulette_result = []
 roulette_tries = random.randint(2,8)
